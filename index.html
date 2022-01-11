@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Island+Moments&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">DojoWeather</div>
+        <div class="options">
+            <h3 class="cityOption" onclick="displayAlert()">Burbank</h3>
+            <h3 class="cityOption" onclick="displayAlert()">Chicago</h3>
+            <h3 class="cityOption" onclick="displayAlert()">Dallas</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="up">
+            <div class="city">San Jose</div>
+            <div class="showTemperature">
+                <div class="textShow">show temperature in</div>
+                <select name="scaleOption" id="scaleOption" class="scaleOption" onchange="convertTemperature()">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="box">
+                <p class="day">Today</p>
+                <img src="css\some_rain.png"/>
+                <p class="description">some rain</p>
+                <div class="degrees">
+                    <h3 class="red temperature">24°</h3>
+                    <h3 class="blue temperature">18°</h3>
+                </div>
+            </div>
+            <div class="box">
+                <p class="day">Tomorrow</p>
+                <img src="css\some_sun.png"/>
+                <p class="description">some sun</p>
+                <div class="degrees">
+                    <h3 class="red temperature">27°</h3>
+                    <h3 class="blue temperature">19°</h3>
+                </div>
+            </div>
+            <div class="box">
+                <p class="day">Friday</p>
+                <img src="css\some_clouds.png"/>
+                <p class="description">some clouds</p>
+                <div class="degrees">
+                    <h3 class="red temperature">21°</h3>
+                    <h3 class="blue temperature">16°</h3>
+                </div>
+            </div>
+            <div class="box">
+                <p class="day">Saturday</p>
+                <img src="css\some_sun.png"/>
+                <p class="description">some rain</p>
+                <div class="degrees">
+                    <h3 class="red temperature">26°</h3>
+                    <h3 class="blue temperature">21°</h3>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <img src="css\cookie.png" alt="cookie img" class="cookie">
+            <div class="alertText">
+                <div class="titleAlert"> Stop! Cookie time</div>
+                <p class="text">
+                    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button class="acceptButton" onclick="disappearAlert()">I Accept</button>
+        </div>
+    </div>
+    <script src="js\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Balsamiq Sans';
+}
+
+/*Header*/
+
+.header{
+    height: 60px;
+    width:700px;
+    color:white;
+    background-color: rgb(160, 203, 255);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+
+.logo{
+    font-size:40px;
+    margin-left:20px;
+}
+.options{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cityOption{
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+/*Container*/
+
+.container{
+    width: 700px;
+    margin:auto;
+}
+
+.up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    border-bottom: 3px solid black;
+}
+
+.city{
+    font-size: 30px;
+    margin-left:20px;
+}
+
+.showTemperature{
+    width:160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.textShow{
+    font-size:12px;
+    width:150px;
+}
+.scaleOption{
+    border:2px solid black;
+    width:50px;
+}
+
+.forecast{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box{
+    background-color: rgb(226, 221, 221);
+    width:120px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin:10px 0 10px 0;
+}
+
+.day{
+    font-size: 20px;
+}
+
+img{
+    width:80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.description{
+    font-size: 15px;
+}
+.degrees{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:70px;
+}
+
+.red.blue{
+    font-size: 18px;
+}
+.red{
+    color:red;
+}
+.blue{
+    color:blue;
+} 
+
+.message{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid black;
+    height:110px;
+    width:700px;
+    position:fixed;
+    top:400px;
+}
+.cookie{
+    width: 60px;
+    height:60px;
+}
+.alertText{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:450px;
+}
+.titleAlert{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top:20px;
+}
+.acceptButton{
+    background-color: rgb(136, 176, 248);
+    color:black;
+    box-shadow: 2px 2px black;
+    font-family: 'Balsamiq Sans';
+    font-size: 17px;
+    cursor:pointer;
+}
